@@ -1,0 +1,150 @@
+Name: Converters
+Id: g=682606703503966efcc618c60840edc9
+Type: ConvertersCategoryFolder
+Children:
+- Name: KeyValueConverter
+  Id: g=ff6429873ff439564c8af2cdc3f0d2f6
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Pairs
+    Id: g=9029189c500fe67d634e02d3b5b6d7dd
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair
+      Id: g=d1162f8576ebb03f14b0dd44439003a2
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Id: g=e73d266706b1f7ded019963e68da1ebc
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 0
+      - Name: Value
+        Id: g=022ea154acc9157bb829d3e8e6a74df9
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: None
+        Value: "#00000000"
+    - Name: Pair1
+      Id: g=e9e646d95ed0a0df6fb1604be05949fe
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Id: g=825a727b355f06abf7a086939fe0f8d5
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 1
+      - Name: Value
+        Id: g=3d2c16077b2a3cd69993e93339e0ce96
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: None
+        Value: "#f7dc31"
+    - Name: Pair2
+      Id: g=a697e374a678939239e1232aa911db64
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Id: g=b06441c3d396e5250160a229adfa9e92
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 2
+      - Name: Value
+        Id: g=088d07957c1fc6766c9b991a6a5bb8f6
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: None
+        Value: "#dbb404"
+    - Name: Pair3
+      Id: g=bc2fdf85113570677bf83cbf2eea3de5
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Id: g=34a22355290e61b275d65e98ffe68524
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 3
+      - Name: Value
+        Id: g=1d23b70e1fd4988cc1a793efb347c37b
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: None
+        Value: "#f931ed"
+    - Name: Pair4
+      Id: g=5dafd154020f974c2eff034ece1d9ee9
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Id: g=a2d8f9afcaad8e16def74c6adb7932be
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 4
+      - Name: Value
+        Id: g=129a4608562b0ebc61e6413441b627c7
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: None
+        Value: "#e70505"
+    - Name: Pair5
+      Id: g=5727ccd4f60323a43b608b75a11f01ee
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Id: g=951689433cfa03e7903bfa6f1335a34c
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 5
+      - Name: Value
+        Id: g=243f26c3ca430397e4e097c0e3c425d8
+        Type: BaseDataVariableType
+        DataType: Color
+        ModellingRule: None
+        Value: "#334bfe"
+- Name: ExpressionEvaluator1
+  Id: g=6b9744a9be034b84d4e306e47b5968e9
+  Supertype: ExpressionEvaluator
+  ReferenceType: HasComponent
+  Children:
+  - Name: Expression
+    Id: g=b02f1f8b48718b107f7bfc216ae8e03c
+    Type: BaseDataVariableType
+    DataType: String
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: "{0}>10 && {1}==1"
+  - Name: ns=2;Source0
+    Id: g=23fdf0c247ab38ffe007dab3dbeb5b16
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+    Children:
+    - Name: DynamicLink
+      Id: g=c7064b9209ee7a43fa9886a39825d8c2
+      Type: DynamicLink
+      DataType: NodePath
+      Value: ""
+  - Name: ns=2;Source1
+    Id: g=e074a85ad02c6b49faae77f723c5efe8
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+    Children:
+    - Name: DynamicLink
+      Id: g=2c27cfc83da34f6b2ef480d154fb88c7
+      Type: DynamicLink
+      DataType: NodePath
+      Value: ""

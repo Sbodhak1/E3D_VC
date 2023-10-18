@@ -1,0 +1,200 @@
+Name: Loggers
+Id: g=4b881169ac3310ccd707149cea329568
+Type: LoggersCategoryFolder
+Children:
+- Name: CM01
+  Id: g=0046a8163f153d056d470ee397c978b9
+  Type: DataLogger
+  Children:
+  - Name: SamplingMode
+    Id: g=f3048cb4ae487ef3cfc3d24d1c4b6255
+    Type: PropertyType
+    DataType: SamplingModeEnum
+    Value: 1
+  - Name: Store
+    Id: g=a69f74a39a8bed314561cc13e4865f39
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"1a999f73b8cfcec59608e0332725d871","Namespace":7}
+    Children:
+    - Name: Kind
+      Id: g=3c0842cf46bf05e8db3c684fc026b1cb
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":13}
+  - Name: VariablesToLog
+    Id: g=198260d60420fc35f5885adc6748a71b
+    Type: BaseObjectType
+    Children:
+    - Name: Speed_SP
+      Id: g=7a8547cdb1b4636a194d30590aa8bae1
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Id: g=a83c7f1bcb534a67cd7ebbdb48d39ef8
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Id: g=5dc51c56e420f4cfd08a1a0a5d123736
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Id: g=600066addbbd9341945675d3a465b9b3
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Id: g=9fbe766704aaea8cd66b32bc71a58959
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Conveyor_Motor1/Speed_SP"
+        Children:
+        - Name: Mode
+          Id: g=c7c0c6b5045d1390b8c6c074341f0749
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Speed_FB
+      Id: g=79a36eb0f828621b8a2b02af910773da
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Id: g=b99b1904bb2aa54460d65044246847f4
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Id: g=60c9f524a1e47e09af15a5b5e8b5ca8b
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Id: g=771e35862e3d282b3edadcd96d249f6e
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Id: g=c456118c4521b42a05a904949e79c679
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Conveyor_Motor1/Speed_FB"
+        Children:
+        - Name: Mode
+          Id: g=96b4fa2bef23daa2875b336518a5155e
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+  - Class: Reference
+    Target: ns=11;i=21
+    Direction: Forward
+  - Name: LogLocalTime
+    Id: g=56556ef475ff8637feed9d73bf21ae1e
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+- Name: CM02
+  Id: g=d16c891798e4343adf4887a2893944eb
+  Type: DataLogger
+  Children:
+  - Name: SamplingMode
+    Id: g=cb4f4e9ef736817348f9431cbafda873
+    Type: PropertyType
+    DataType: SamplingModeEnum
+    Value: 1
+  - Name: Store
+    Id: g=21a42eec29114cddbb21a717b370466e
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"1a999f73b8cfcec59608e0332725d871","Namespace":7}
+    Children:
+    - Name: Kind
+      Id: g=e2a2afab65cc14c11404ba949e0dc7de
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"Id":1,"Namespace":13}
+  - Name: VariablesToLog
+    Id: g=1b9263f9b4392a2348bcf322a5912434
+    Type: BaseObjectType
+    Children:
+    - Name: Speed_SP
+      Id: g=8ecd6ea872ad63707f7ae6a7d36b5a7f
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Id: g=712ae6e4fb82ca65d4857d219363b99b
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Id: g=1617a2025070dd273382ed9de0c8daab
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Id: g=86c696dc2442734fb49fd2b7d8224617
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Id: g=415a9e511083886bebee840725dab653
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Conveyor_Motor2/Speed_SP"
+        Children:
+        - Name: Mode
+          Id: g=14e11f88596685d9062c525d03af62e7
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Speed_FB
+      Id: g=fa483e42087b88503d5ce0d7d8b7cabb
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Id: g=0564af45ba9b6ce5dc4fb85d31b59dba
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Id: g=79062e4623fa97459fee2d8d781f4e71
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Id: g=237ec8df216e7652f1870bc4b30d1445
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Id: g=24f5fe578b348a2daac61f341fc0f767
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/Conveyor_Motor2/Speed_FB"
+        Children:
+        - Name: Mode
+          Id: g=d8d5f929cc9a2bd2f7be3d6cf2dbf2d0
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+  - Class: Reference
+    Target: ns=11;i=21
+    Direction: Forward
+  - Name: LogLocalTime
+    Id: g=681a21458a6e322a6aafba9c5b0fab5e
+    Type: PropertyType
+    DataType: Boolean
+    Value: true

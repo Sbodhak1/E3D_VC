@@ -1,0 +1,157 @@
+Name: DataStores
+Id: g=3d47d6a4471ea5e177d3826c97cdb628
+Type: DataStoresCategoryFolder
+Children:
+- Name: MotorDB
+  Id: g=1a999f73b8cfcec59608e0332725d871
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Id: g=c4491e70a97162a0fbdb4f07b1b20f36
+    Type: BaseObjectType
+    Children:
+    - Name: CM01
+      Id: g=8ae2b6d59f75e3bef59a2fdd43d15dfa
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Id: g=0b61911466662d9734cb806be667e5d9
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Id: g=6c9d93d6da714f577c36ac3019b78bc4
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Id: g=99ad6606627009cd6625f02af2635095
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Speed_SP
+          Id: g=f735e508f15a6a9fcbe6d4696551b2b2
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Speed_FB
+          Id: g=18b1f99c84e3a23ea6e380b0c35faa56
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+    - Name: CM02
+      Id: g=c665329307c4015fdb98abc03a9cddaa
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Id: g=f4352350ca6387a5dec0287b628f34a1
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Id: g=1402b9537e13b0723d125ba893e0259d
+          Type: StoreColumn
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: LocalTimestamp
+          Id: g=f57062a186cdceb0cc2ee63831a7ca80
+          Type: StoreColumn
+          DataType: DateTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Speed_SP
+          Id: g=96b9c026db60262ac619fbe672cedee8
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+        - Name: Speed_FB
+          Id: g=56195691f9b415fae38e2ad557cfb60b
+          Type: StoreColumn
+          DataType: Float
+          Value: 0.0
+  - Class: Reference
+    Target: ns=18;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=18;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Id: g=74b12a7e0874b419778a779a8f5e712d
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Id: g=fcdf72df1b7c2aad732b6410ad209bbf
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Id: g=1ba5cedac00fece29b4b0829befdcdfb
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Id: g=b936d4a816458a8e8c8b971e0d1f3991
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=13;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=59
+    Direction: Forward

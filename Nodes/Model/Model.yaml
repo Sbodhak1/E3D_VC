@@ -1,0 +1,331 @@
+Name: Model
+Id: g=ee9a61c57441c0122ac29ec524112d54
+Type: ModelCategoryFolder
+Children:
+- Name: Conveyor_MotorInstance
+  Id: g=78f5da2d238199c5894382d464fabd8a
+  Type: Conveyor_Motor
+  Children:
+  - Name: Start_CMD
+    Id: g=9017afe10bdf82dce67e02fd7449ff37
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Stop_CMD
+    Id: g=e55b988afa78504f317537f4d8abc47d
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Run_FB
+    Id: g=7d5faae2cd2934b30b8ba948f654c814
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Id: g=0dae695bc57e7df22da0134e2aa30150
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Start_CMD"
+  - Name: Speed_SP
+    Id: g=763686b4ed2f71767f54fd3245e18814
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Speed_FB
+    Id: g=a13b8074e01a532e99741ae6d35f832d
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ZSS
+    Id: g=78a6e84dfc3d23e1269747de7a9e415f
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: LG
+    Id: g=9bf6ec0c40cf0b181c4d2c7b2f2c51a7
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=f8965ecbeab30f8d6b2188d37a02f8f7
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Source0
+        Id: g=eded175957809ab49f2c33f8bb415f3c
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=3706fca260af5dbce343957c35573f5d
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Speed_SP"
+  - Name: Name
+    Id: g=18c908585ed5d528810a97577533e561
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Conveyor Motor"
+- Name: Conveyor_Motor1
+  Id: g=c477ee67317cb64e24b2602efbc5bc59
+  Type: BaseObjectType
+  Children:
+  - Name: Start_CMD
+    Id: g=bbc51fd4c9274244a7fe8bffe51f290c
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Stop_CMD
+    Id: g=2c8edbb8de8e852832ad0f960fd6aa8b
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Run_FB
+    Id: g=e79789601ead76466d5edc186b3911fa
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Id: g=5efca8c05c47e6e8e1eb77fba618e2cd
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Start_CMD"
+      Children:
+      - Name: Mode
+        Id: g=7fa1bd3a6a6792565452f887c5c656b1
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Speed_SP
+    Id: g=ef302c8370ebdb52d439830376cf9627
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Speed_FB
+    Id: g=f066d2bbb96842072db39608d74c9fcc
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ZSS
+    Id: g=a7d9d9f5c25bd3168b68f3aebc515d9d
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: LG
+    Id: g=8bca28d7127bce707b923347c9a71a41
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=bd245d4171e42b20b2922f9180c6c622
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=80b4603970671b86b6449a5a37ab0650
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}/50"
+      - Name: ns=2;Source0
+        Id: g=a793f2d63a6fface5cd011c39a654713
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=02e0df9a970dfc1d0e9583867ba1f7af
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Speed_SP"
+  - Name: Name
+    Id: g=6b3dbe4cc3afa26dd3bfd2f123756902
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Motor: 01"
+- Name: Conveyor_Motor2
+  Id: g=2c2911d25d7d78732bbcdf05a5544e6f
+  Type: BaseObjectType
+  Children:
+  - Name: Start_CMD
+    Id: g=0e507f293818d216902e47370bd7128e
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Stop_CMD
+    Id: g=16aa6e9c3d60e554641cb255dd22aa3c
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Run_FB
+    Id: g=e0d0d348596ba15a78f48d61b5df750e
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Id: g=8201f64ff3f6014f2815dca6d788beac
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Start_CMD"
+      Children:
+      - Name: Mode
+        Id: g=47e35a9266578d92252d01635ab80968
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Speed_SP
+    Id: g=29c6ad866273bc7983d8c7a9d64287da
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Speed_FB
+    Id: g=9ca13b514b27bc8054361e409d1281ea
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ZSS
+    Id: g=30c0fa6ce3e81f4997c3b8b4160ff542
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: LG
+    Id: g=4fba0b1c2ffaf672db870b42c526bd8f
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=978577f431c5397c5aec89ac24218154
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=8a50d0e3fc35b6cd88a96ee41cd1494a
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        Value: "{0}/50"
+      - Name: ns=2;Source0
+        Id: g=c69818a5c3ea6d6155270e817fa59a64
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=af286922791fe3a3046cfb1d6cf78eba
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Speed_SP"
+  - Name: Name
+    Id: g=f9a031841d308f52b8bc4afd6f6b68dc
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Motor: 02"
+- Name: Load_Release
+  Id: g=325dc45d538328f8da9f8adb5afa1013
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Person_01
+  Id: g=ce4a0eba97e0949b125bae6628447d49
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Person_02
+  Id: g=7fcf16d07416a6db7946ce0281aa8222
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Variable1
+  Id: g=cb0ef3c1a636196e2b291d8600779250
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable2
+  Id: g=060da83cba90130f124e833551d8bce4
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: Conveyor_Motor
+  Id: g=ffa65d4af2c03855438d7bc9cae0a6e5
+  Supertype: BaseObjectType
+  Children:
+  - Name: Start_CMD
+    Id: g=9b154b210df0abda3e7e09846f4b4441
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Stop_CMD
+    Id: g=2ac639aea0756a7de3211ff0f98b8199
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Run_FB
+    Id: g=f560edab8d368d03507ff92627cd5188
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Id: g=c2cfc3cfc7e00f3358d8e090e11996c2
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../Start_CMD"
+      Children:
+      - Name: Mode
+        Id: g=2347fde079c32bc28ab6a9c06844a002
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Speed_SP
+    Id: g=0c22c6d7db740171d732015193f178f1
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Speed_FB
+    Id: g=2839e5d275bb7cc06c3bab0e4bb7616e
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: ZSS
+    Id: g=edb294084985a406942ad6e02b2fdeb3
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: LG
+    Id: g=ee9d0421b9ac598e54865c7871e74c90
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: ExpressionEvaluator1
+      Id: g=41ea6441f86e6fac9d2b10c5f4968438
+      Type: ExpressionEvaluator
+      Children:
+      - Name: Expression
+        Id: g=4a5253f66f3f2841f4a61de2992b6038
+        Type: BaseDataVariableType
+        DataType: String
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: "{0}/50"
+      - Name: ns=2;Source0
+        Id: g=d4a87223c5fa357e39cec749f0181ed4
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Id: g=314ec56f82ebc2d8fad837381be9cd3b
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Speed_SP"
+  - Name: Name
+    Id: g=4e51a521421443714997969b47a0646f
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Conveyor Motor"

@@ -1,0 +1,67 @@
+Name: E3D_VC
+Id: g=ae7b01f7a6036d74f7a055caff8a98f0
+Type: ProjectFolder
+Children:
+- Name: Localization
+  Id: g=67328a710114ae10dde8df3ecc96590b
+  Type: PropertyGroup
+  Children:
+  - Name: Locales
+    Id: g=ef55899c85aa4a2472396a767946588d
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+  - Name: LocaleFallbackList
+    Id: g=c92edb722ef8901eb24673a6aed06255
+    Type: BaseDataVariableType
+    DataType: LocaleId
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: ["en-US"]
+- Name: Authentication
+  Id: g=40e605c96fb3a90e0cc2b3782f662766
+  Type: PropertyGroup
+- Name: PasswordPolicy
+  Id: g=f632be34e5d7705179d9e73956c94195
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=dc8a8c93f47860b4b66a41e08ca3f547
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=d24af63708bccfc06a51f248c1af09f2
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Id: g=9978e3a689f3c6e749b002a16b465b01
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=ba456f162599bfa8263510599e33f162
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 8
+- Name: AlarmConfiguration
+  Id: g=145b47d9c76c18cf11fa2230f599678e
+  Type: PropertyGroup
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: System/System.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml

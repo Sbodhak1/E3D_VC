@@ -1,0 +1,36 @@
+Name: Translations
+Id: g=a44f4c8d7ad5b9e3093ae8ffbe512447
+Type: TranslationsCategoryFolder
+Children:
+- Name: LocalizationDictionary1
+  Id: g=dbfa9493f12642203faedd2a43d855a8
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [19,2],
+    "Body": [
+     "","en-US",
+     "Password","Password",
+     "Change User","Change User",
+     "Old password","Old password",
+     "New password","New password",
+     "ChangePasswordFormSuccessMessage","Password changed successfully",
+     "Confirm password","Confirm password",
+     "Your password has expired. Please enter a new one.","Your password has expired. Please enter a new one.",
+     "ChangeUserFormOutputSuccessMessage","Change User successful",
+     "Change password","Change password",
+     "ChangeUserFormOutputErrorMessage","Authentication failed",
+     "ChangeUserFormOutputPasswordExpired","Password expired",
+     "ChangePasswordFormWrongOldPasswordMessage","Wrong old password",
+     "ChangePasswordFormPasswordAlreadyUsedMessage","Password already used",
+     "ChangePasswordFormPasswordChangedTooRecentlyMessage","Password changed too recently",
+     "ChangePasswordFormPasswordTooShortMessage","Password too short",
+     "ChangePasswordFormUserNotFoundMessage","User not found",
+     "ChangePasswordFormUnsupportedOperationMessage","Unsupported operation",
+     "ChangePasswordFormPasswordMismatchMessage","Passwords do not match"
+    ]
+   }
